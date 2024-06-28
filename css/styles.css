@@ -2,6 +2,7 @@ body {
   font-family: "Roboto", sans-serif;
   /* second-family: "Raleway", sans-serif; */
   background-color: #fff;
+  color: #434455;
 }
 
 ul {
@@ -15,6 +16,7 @@ a {
 button {
   cursor: pointer;
 }
+
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -22,6 +24,7 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  text-transform: capitalize;
 }
 
 .section-subtitle {
@@ -40,17 +43,22 @@ button {
 }
 
 .visually-hidden {
-  position: absolute;
+  /*position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
-  padding: 0;
+  padding: 0; */
   white-space: nowrap;
   overflow: hidden;
 }
 
 /* HEADER */
+.header {
+}
+.header-navigation {
+}
+
 .header-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -58,11 +66,14 @@ button {
   line-height: 117%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #2e2f42;
+  color: #4d5ae5;
 }
 
 .header-logo-italic {
-  color: #4d5ae5;
+  color: #2e2f42;
+}
+
+.header-menu-list {
 }
 
 .header-menu-link {
@@ -72,6 +83,23 @@ button {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+.header-menu-link:hover,
+.header-menu-link:focus {
+  color: #404bbf;
+}
+
+.header-menu-item {
+}
+
+.heder-address {
+  font-style: normal;
+}
+
+.header-address-list {
+}
+
+.header-address-item {
+}
 
 .header-address-link {
   font-weight: 400;
@@ -79,12 +107,13 @@ button {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #434455;
-  font-style: normal;
 }
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: #404bbf;
+
+.header-address-link:hover,
+.header-address-link:focus {
+  color: #404bbf;
 }
+
 /* HERO */
 .hero {
   background-color: #2e2f42;
@@ -106,13 +135,15 @@ button {
   line-height: 150%;
   letter-spacing: 0.04em;
   color: #fff;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #404bbf;
 }
 /* FEATURES */
 
 .features {
-  /*background-color: #fff;*/
 }
 
 .features-list {
@@ -127,6 +158,9 @@ button {
 .section-team {
   background-color: #f4f4fd;
 }
+.section-team {
+}
+
 .team {
 }
 
@@ -148,6 +182,7 @@ button {
 /* PORTFOLIO */
 
 .section-portfolio {
+  background-color: #fff;
 }
 
 .portfolio-title {
@@ -172,7 +207,7 @@ button {
 .footer {
   background-color: #2e2f42;
 }
-.footer-logo {
+.footer-logo-italic {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -181,7 +216,8 @@ button {
   text-transform: uppercase;
   color: #f4f4fd;
 }
-.footer-logo-italic {
+
+.footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
