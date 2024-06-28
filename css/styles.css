@@ -1,6 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
-  second-family: "Raleway", sans-serif;
+  /* second-family: "Raleway", sans-serif; */
   background-color: #fff;
 }
 
@@ -10,6 +10,10 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+button {
+  cursor: pointer;
 }
 .section-title {
   font-weight: 700;
@@ -29,11 +33,21 @@ a {
 }
 
 .section-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 /* HEADER */
@@ -67,6 +81,10 @@ a {
   color: #434455;
   font-style: normal;
 }
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #404bbf;
+}
 /* HERO */
 .hero {
   background-color: #2e2f42;
@@ -92,20 +110,6 @@ a {
   background: #4d5ae5;
 }
 /* FEATURES */
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 
 .features {
   /*background-color: #fff;*/
